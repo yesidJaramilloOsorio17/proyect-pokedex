@@ -32,8 +32,8 @@ const Item = () => {
           pokemon.types?.[0].type.name === "dark"? "purple":
           pokemon.types?.[0].type.name === "ghost"? 'lightpink':"golden"}}  >
               
-                <h2><span>Hey </span>{userName}!! <span>This pokemon is </span> <br /> <span className='title'>{pokemon.name}</span> </h2>
-                
+                <h2 className='ww'>"Hey {userName}!! <span>&#160; </span></h2>
+                <h2>This pokemon is<br /> <span className='title'>{pokemon.name}</span></h2>
                <img width={"150px"} src={pokemon.sprites?.other.dream_world.front_default} alt="" />
                   <div className='estate'>
                     <h3 className='estate1'>Weight: {pokemon.weight}</h3>

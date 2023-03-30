@@ -88,7 +88,7 @@ box-shadow:8px 8px 3px rgba(3, 3, 3, 0.603)
 }
 .center{
    display: grid;
-   background-image: url(/public/bg2.jpg);
+   background-color: orange;
    background-position:center;
    background-size:cover;
    text-align: center;
@@ -101,9 +101,9 @@ box-shadow:8px 8px 3px rgba(3, 3, 3, 0.603)
     display: grid;
     background-color: orange;
     text-align: center;
-    border-radius: 20px;
+   border-radius: 20px;
     border: solid 3px;
- 
+    
  }
 .logo{
     display: flex;
@@ -120,6 +120,65 @@ box-shadow:8px 8px 3px rgba(3, 3, 3, 0.603)
 }
 .description{
     margin: 0px;
+}
+.give {
+    background-color: orange;
+    float: left;
+    color: #000;
+    position: relative;
+     border-radius: 6px;
+     text-align: center;
+     border: solid 3px;
+}
+.give span
+{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color:orange;
+    border-left: 1px solid #000;
+   
+    animation: maquina 5s  alternate steps(26);
+}
+
+
+@keyframes maquina {
+    from{
+        width: 90%;
+    }
+    to{
+        width: 10%;
+    }
+    
+}
+
+.w {
+    background-color: orange;
+    float: left;
+    color: #000;
+    position: relative;
+     text-align: center;
+    
+}
+
+
+.w span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color:orange;
+    border-left: 1px solid #000;
+   
+    animation: text 5s  alternate steps(45);
+}
+@keyframes text {
+    from{
+        width: 70%;
+    }
+    to{
+        width: 30%;
+    }
+    
 }
 
 
