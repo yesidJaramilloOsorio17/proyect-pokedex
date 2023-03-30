@@ -64,9 +64,9 @@ const GetPokemons = ({pokemons, setPokemons}) => {
             ))}
             </div>
         <div className='pokemons'>
-            <div className='bytype'>
+            
               <ByType getByType={getByType} />
-            </div>
+           
            
 
 
