@@ -55,14 +55,10 @@ const GetPokemons = ({pokemons, setPokemons}) => {
         }
     }
     selectAcces();
-    console.log(page);
+    
     return (
         <>
-                <div className='list'>
- {acces.map((num) => (
-                <Pagination num={num} key={num} setPage={setPage} />
-            ))}
-            </div>
+
         <div className='pokemons'>
             
               <ByType getByType={getByType} />
@@ -78,7 +74,7 @@ const GetPokemons = ({pokemons, setPokemons}) => {
            
         </div>
         <div className='list'>
- {acces.map((num) => (
+            {acces.map((num) => (
                 <Pagination num={num} key={num} setPage={setPage} />
             ))}
             </div></>
