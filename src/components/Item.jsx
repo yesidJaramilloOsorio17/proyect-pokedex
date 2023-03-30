@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom';
-
+import logo from "../assets/img/logo.png"
 const Item = () => {
     const userName = useSelector(state => state.userName)
     const {id} = useParams();
@@ -18,7 +18,7 @@ const Item = () => {
         <>
         <div >
           <div className='logo'>
-             <img src="/public/logo.png" width="300px" alt="" className='img'/>
+             <img src={logo} width="300px" alt="" className='img'/>
           </div>
           
         <div className='tarjet-principal'>
@@ -32,7 +32,7 @@ const Item = () => {
           pokemon.types?.[0].type.name === "dark"? "purple":
           pokemon.types?.[0].type.name === "ghost"? 'lightpink':"golden"}}  >
               
-                <h2><span>Hey </span>{userName}!! <span>este es el pokemon</span> <br /> <span className='title'>{pokemon.name}</span> </h2>
+                <h2><span>Hey </span>{userName}!! <span>This pokemon is </span> <br /> <span className='title'>{pokemon.name}</span> </h2>
                 
                <img width={"150px"} src={pokemon.sprites?.other.dream_world.front_default} alt="" />
                   <div className='estate'>
@@ -42,7 +42,7 @@ const Item = () => {
                
                   </div>
                   <div >
-                     <button className='button' style={{backgroundColor:"grey"}} onClick={() => navigate(-1)}>Regresar</button>
+                     <button className='button' style={{backgroundColor:"grey"}} onClick={() => navigate(-1)}>Back</button>
                   </div>
                
             </div>
@@ -56,8 +56,8 @@ const Item = () => {
           pokemon.types?.[0].type.name === "dragon"? "orange": 
           pokemon.types?.[0].type.name === "dark"? "purple":
           pokemon.types?.[0].type.name === "ghost"? 'lightpink':"golden"}} >
-         <h3>Abilidades:</h3>
-         <h2>{pokemon.abilities?.[0].ability.name}</h2>
+         <h3>Abilities:</h3>
+         <h2 className='estate1'>{pokemon.abilities?.[0].ability.name}</h2>
        </div>    
         
       <div className='tarjet'  style={{backgroundColor: pokemon.types?.[0].type.name === "fire" ? "red": 
@@ -69,7 +69,7 @@ const Item = () => {
           pokemon.types?.[0].type.name === "dark"? "purple":
           pokemon.types?.[0].type.name === "ghost"? 'lightpink':"golden"}} >
          <h3>Movements:</h3>
-         <h2>{pokemon.moves?.[0].move.name}</h2>
+         <h2 className='estate1'>{pokemon.moves?.[0].move.name}</h2>
        </div>
        <div className='tarjet'  style={{backgroundColor: pokemon.types?.[0].type.name === "fire" ? "red": 
          pokemon.types?.[0].type.name === "water"?"blue":
@@ -80,7 +80,7 @@ const Item = () => {
           pokemon.types?.[0].type.name === "dark"? "purple":
           pokemon.types?.[0].type.name === "ghost"? 'lightpink':"golden"}} >
          <h3>type:</h3>
-         <h2>{pokemon.types?.[0].type.name}</h2>
+         <h2 className='estate1'>{pokemon.types?.[0].type.name}</h2>
        </div>
             </div>  
       

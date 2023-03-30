@@ -24,10 +24,10 @@ const Pokedex = () => {
     return (
         <div className='pokedex'>
             <div>
-                 <button onClick={() => navigate(-1)}  style={{backgroundColor:"grey"}}>Regresar</button>
+                 <button onClick={() => navigate(-1)}  style={{backgroundColor:"grey"}}>Back</button>
             </div>
            <div className='center'>
-              <h1 >Pokedex</h1><h2>bienvenid@ <span className='title'>{userName}</span>, <br /> <span>Ahora puedes buscar tu pokemon favorito </span> </h2>
+              <h1 >Pokedex</h1><h2 className='description'>Welcome <span className='title'>{userName}</span>, <br /> <span>Here you can find your favorite pokemon </span> </h2>
             
            </div>
            <div className='list'>

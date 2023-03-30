@@ -17,9 +17,9 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <h1 className='center'>Bienvenido aventurero!!</h1>
+            <h1 className='center1'>Hello trainer!!</h1>
             <img src={logohome} width="350px" className='imagen'  alt="" />
-            <h2 className='center'>escribe tu nombre para empezar</h2>
+            <h2 className='center1'>Give me your name to start</h2>
             <div className='tarjet'>
                 <input type="text" className='button' value={name} onChange={e => setName(e.target.value)} />
             <button className='button' onClick={()=> goPokedex()}>Go</button>

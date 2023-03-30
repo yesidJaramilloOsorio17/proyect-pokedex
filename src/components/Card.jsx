@@ -22,10 +22,10 @@ const Card = ({ url}) => {
           pokemon.types?.[0].type.name === "dark"? "purple":
           pokemon.types?.[0].type.name === "ghost"? 'lightpink':"golden"}}  >
             <div>
-              <h2>{pokemon.name}  </h2>
+              <h2 className='estate1'>{pokemon.name}  </h2>
             </div>
             
-            <div>type: {pokemon.types?.[0].type.name}</div>
+            <div className='tipe'>type: {pokemon.types?.[0].type.name}</div>
             <img width={"150px"} src={pokemon.sprites?.other.dream_world.front_default} alt="" />
         </div>
     );
