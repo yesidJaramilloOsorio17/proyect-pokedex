@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div className='home'>
             <h1 className='center'>Bienvenido aventurero!!</h1>
-            <img src="url(public/home.png)" width="350px" className='imagen'  alt="" />
+            <img src="public/home.png" width="350px" className='imagen'  alt="" />
             <h2 className='center'>escribe tu nombre para empezar</h2>
             <div className='tarjet'>
                 <input type="text" className='button' value={name} onChange={e => setName(e.target.value)} />

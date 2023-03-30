@@ -57,23 +57,20 @@ const GetPokemons = ({pokemons, setPokemons}) => {
     selectAcces();
     
     return (
-        <div className='tarjet1'>
+        <><div className='pokemons'>
             <ByType getByType={getByType} />
             {pokemonsToShow?.map((pokemon) => (
-               <Card 
-               url={pokemon.url ? pokemon.url : pokemon.pokemon.url} 
-               key={pokemon.url ? pokemon.url : pokemon.pokemon.url} /> 
-            ))
-            }
-            <div className='list'>
-                {
-                acces.map((num) => (
-                    <Pagination num={num} key={num} setPage={setPage}/>
-                ))
-            }   
-            </div>
+                <Card
+                    url={pokemon.url ? pokemon.url : pokemon.pokemon.url}
+                    key={pokemon.url ? pokemon.url : pokemon.pokemon.url} />
+            ))}
+        </div><div className='list'>
+                {acces.map((num) => (
+                    <Pagination num={num} key={num} setPage={setPage} />
+                ))}
+            </div></>
          
-        </div>
+       
     );
 };
 
