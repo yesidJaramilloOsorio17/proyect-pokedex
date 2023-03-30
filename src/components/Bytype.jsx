@@ -11,7 +11,7 @@ const ByType = ({getByType}) => {
 
     return (
         <div >
-            <select  name="" id=""  onChange={e => getByType(e.target.value)}>
+            <select  onChange={e => getByType(e.target.value)}>
                 <option  value="https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1279" >  AllPokemons</option>
             
             {

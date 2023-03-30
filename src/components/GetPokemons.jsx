@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import ByType from './ByType';
+import ByType from './Bytype';
 import Card from './Card';
 import Pagination from './Pagination';
 
@@ -57,27 +57,23 @@ const GetPokemons = ({pokemons, setPokemons}) => {
     selectAcces();
     
     return (
-        <>
-
-        <div className='pokemons'>
-            
-              <ByType getByType={getByType} />
-           
-           
-
-
+        <div className='tarjet1'>
+            <ByType getByType={getByType} />
             {pokemonsToShow?.map((pokemon) => (
-                <Card
-                    url={pokemon.url ? pokemon.url : pokemon.pokemon.url}
-                    key={pokemon.url ? pokemon.url : pokemon.pokemon.url} />
-            ))}
-           
+               <Card 
+               url={pokemon.url ? pokemon.url : pokemon.pokemon.url} 
+               key={pokemon.url ? pokemon.url : pokemon.pokemon.url} /> 
+            ))
+            }
+            <div className='list'>
+                {
+                acces.map((num) => (
+                    <Pagination num={num} key={num} setPage={setPage}/>
+                ))
+            }   
+            </div>
+         
         </div>
-        <div className='list'>
-            {acces.map((num) => (
-                <Pagination num={num} key={num} setPage={setPage} />
-            ))}
-            </div></>
     );
 };
 
