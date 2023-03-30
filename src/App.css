@@ -169,7 +169,7 @@ box-shadow:8px 8px 3px rgba(3, 3, 3, 0.603)
     background-color:orange;
     border-left: 1px solid #000;
    
-    animation: text 5s  alternate steps(45);
+    animation: text 3s  alternate steps(45);
 }
 @keyframes text {
     from{
