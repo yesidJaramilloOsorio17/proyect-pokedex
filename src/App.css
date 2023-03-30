@@ -1,0 +1,122 @@
+:root{
+    margin: 0;
+    padding: 0;
+    background-image: url(/public/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.pokedex{
+    display: grid;
+    justify-content: center;
+}
+.card{
+    display: grid;
+    border-radius: 20px;
+    padding: 10px;
+background-color: cadetblue;
+border: solid 3px;
+text-align: center;
+}
+.pokemons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-items: center;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 20px;
+    border: solid 3px;
+    padding: 05px;
+    margin: 05px;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.tarjet{
+    border: solid 3px;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+    text-decoration:underline;
+    background-color: cadetblue;
+}
+.estate{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.button{
+    border-radius: 10px;
+    padding: 05px;
+}
+.tarjet1{
+    display: grid;
+    grid-template-columns: auto ;
+    
+}
+
+.tarjet-principal{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+   
+}
+
+.estate1{
+    border: solid 3px;
+    margin: 03px;
+    border-radius: 10px ;
+    padding: 02px;
+}
+.title{
+    font-size: 40px;
+}
+.center{
+   display: grid;
+   background-color: orange;
+   text-align: center;
+   border-radius: 20px;
+   border: solid 3px;
+   padding: 05px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imagen{
+    border-radius: 35%;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+
+@media (max-width: 780px) {
+    .pokemons{
+        display: grid;
+        grid-template-columns: auto auto ;
+      
+        justify-items: center;
+    }
+    }
+
+    @media (max-width: 450px) {
+        .pokemons{
+            display: grid;
+            grid-template-columns: auto  ;
+            justify-items: center;
+            
+        }
+      
+        }
