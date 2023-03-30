@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { getUsername } from '../store/slices/userName.slice';
-
+import logohome from "../assets/img/logohome.png";
 
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div className='home'>
             <h1 className='center'>Bienvenido aventurero!!</h1>
-            <img src="/public/home.png" width="350px" className='imagen'  alt="" />
+            <img src={logohome} width="350px" className='imagen'  alt="" />
             <h2 className='center'>escribe tu nombre para empezar</h2>
             <div className='tarjet'>
                 <input type="text" className='button' value={name} onChange={e => setName(e.target.value)} />
