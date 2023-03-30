@@ -9,7 +9,7 @@ const Pokedex = () => {
     const navigate = useNavigate();
     const [pokemons, setPokemons] = useState([])
     const [search, setSearch] = useState("")
-    const [suggestion, setSuggestion] = useState([])
+   
 
     useEffect(() => {
         getAllPokemons();
