@@ -18,7 +18,7 @@ const Item = () => {
         <>
         <div >
           <div className='logo'>
-             <img src="./public/logo.png" width="300px" alt="" className='img'/>
+             <img src="/public/logo.png" width="300px" alt="" className='img'/>
           </div>
           
         <div className='tarjet-principal'>
